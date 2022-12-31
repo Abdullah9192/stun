@@ -6,10 +6,10 @@ from datetime import datetime, timedelta
 remote_branch = "main"  # Change this to your desired branch name
 
 # Start from January 1, 2024
-start_date = datetime(2024, 1, 1)
+start_date = datetime(2023, 1, 1)
 
 # Loop through each day of the year 2024 (365 days)
-for i in range(175):  # Loop through 365 days of 2024
+for i in range(365):  # Loop through 365 days of 2024
     commit_date = start_date + timedelta(days=i)  # Get the actual date for each day in 2024
 
     for j in range(randint(1, 10)):  # Random number of commits per day
